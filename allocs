@@ -1,7 +1,7 @@
-# Poland
+# Poland - major ISP allocations
 # http://www-public.int-evry.fr/~maigron/RIR_Stats/RIPE_Allocations/Allocs/PL.html
 
-INEA="46.228.80.0/20 62.21.0.0/17 77.65.0.0/17 79.173.0.0/18 80.87.32.0/20 85.221.128.0/17 88.151.136.0/21 95.108.0.0/17 109.173.128.0/17 213.156.96.0/19 217.170.160.0/20"
+INEA="46.228.80.0/20 46.238.64.0/18 62.21.0.0/17 77.65.0.0/17 79.173.0.0/18 80.87.32.0/20 85.221.128.0/17 88.151.136.0/21 95.108.0.0/17 109.173.128.0/17 213.156.96.0/19 217.170.160.0/20"
 MULTIMEDIA="81.190.0.0/16 176.221.96.0/19"
 UPC="89.64.0.0/12"
 
@@ -14,13 +14,38 @@ TMOBILE="178.180.0.0/14 188.146.0.0/15"
 ORANGE="37.47.0.0/16"
 
 
-# Finland
+# Finland - major ISP allocations
 # http://www-public.tem-tsp.eu/~maigron/RIR_Stats/RIPE_Allocations/Allocs/FI.html
 
 SONERAFI="84.248.0.0/14 93.106.0.0/16 109.240.0.0/16"
 
 
-# Services
+# System Package Repositories
+#
+
+# security.debian.org
+DEBIAN_SECURITY="212.211.132.0/24 217.196.149.224/28 195.20.242.64/26 195.20.242.128/26"
+
+# volatile.debian.org
+DEBIAN_VOLATILE="130.89.148.14 5.153.231.0/24 149.20.4.15 128.31.0.62"
+
+# task.gda.pl, ftp.pl.debian.org, pl.archive.ubuntu.com
+DEBIAN_PLMIRROR="153.19.0.0/16"
+
+DEBIAN="$DEBIAN_SECURITY $DEBIAN_VOLATILE $DEBIAN_PLMIRROR"
+CANONICAL="91.189.88.0/21"
+
+# download.proxmox.com
+PROXMOX="212.224.123.64/29"
+
+# packages.devuan.org
+DEVUAN="46.105.191.64/28"
+
+# *.raspbian.org
+RASPBIAN="93.93.128.0/24"
+
+
+# Other Important Services
 
 # https://ip-ranges.amazonaws.com/ip-ranges.json
 AMAZONAWS="52.0.0.0/8 54.0.0.0/8 46.137.0.0/16 34.192.0.0/10"
@@ -28,8 +53,27 @@ AMAZONAWS="52.0.0.0/8 54.0.0.0/8 46.137.0.0/16 34.192.0.0/10"
 # https://uptimerobot.com/locations
 UPTIMEROBOT="69.162.124.224/28 63.143.42.240/28 46.101.250.135 46.137.190.132 54.64.67.106 54.67.10.127 54.79.28.129 54.94.142.218 104.131.107.63 122.248.234.23 159.203.30.41 178.62.52.237 188.226.183.141"
 
+# ipv4.pool.sks-keyservers.net
+KEYSERVERS="140.211.169.202 94.23.204.11 193.164.133.100 204.61.209.238 185.95.216.79 69.31.184.214 151.80.60.86 45.33.82.183 80.238.125.164 51.15.53.138"
 
-# other
+# major Git repositories
+GITHUB="192.30.252.0/22"
+BITBUCKET="104.192.136.0/21"
+
+# javadl.oracle.com
+ORACLE="137.254.0.0/16"
+
+# ssl.smsapi.pl
+SMSAPI="185.36.169.251"
+
+# platform-api.newrelic.com, collector-pool.newrelic.com
+NEWRELIC_COLLECTOR="50.31.164.0/24"
+
+# rarlab.com
+RARLAB="5.135.104.96/27"
+
+
+# Local addresses
 
 NONROUTABLE="10.0.0.0/8 172.16.0.0/12 192.168.0.0/16"
 DOCKERONLY="172.16.0.0/12"
