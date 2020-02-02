@@ -23,6 +23,7 @@ ORANGE="31.60.0.0/14 37.47.0.0/16"
 # http://www-public.tem-tsp.eu/~maigron/RIR_Stats/RIPE_Allocations/Allocs/FI.html
 
 SONERAFI="84.248.0.0/14 93.106.0.0/16 109.240.0.0/16"
+ELISAFI="85.76.0.0/14"
 
 
 # System Package Repositories
