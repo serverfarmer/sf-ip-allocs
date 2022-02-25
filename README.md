@@ -67,7 +67,7 @@ utilizing IP addresses provided by their operator (except for Virgin Mobile Pols
 
 ### global cloud services
 
-- `AMAZONAWS` - [Amazon Web Services](https://aws.amazon.com/) (only IP ranges, from which you can expect incoming traffic, and sometimes merges into bigger subnets - [the full list](https://ip-ranges.amazonaws.com/ip-ranges.json) includes over 6500 different subnets!)
+- `AMAZONAWS` - [Amazon Web Services](https://aws.amazon.com/) (only IP ranges, from which you can expect incoming traffic, and sometimes merged into bigger subnets - [the full list](https://ip-ranges.amazonaws.com/ip-ranges.json) includes over 6500 different subnets!)
 - `GCLOUD` - [Google Cloud Platform](https://cloud.google.com/) (only major IP ranges, see [this script](https://gist.github.com/n0531m/f3714f6ad6ef738a3b0a) for the full list)
 
 ### CI/CD tools
