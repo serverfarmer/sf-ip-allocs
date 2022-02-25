@@ -19,19 +19,19 @@ If you don't have any firewalling solution, please take a look at [Server Farmer
 
 This public repository is actively maintained since Sep 2016. Previously, some of these variables were maintained since 2009, in private repository, as part of commercial solution.
 
-Right now, our plan regarding this repository is to maintain it as long as possible. Also, **it will stay free** and, as far as possible without any changes breaking compatibility.
+Right now, our plan regarding this repository is to maintain it as long as possible. Also, **it will stay free** and, as far as possible, without any changes breaking compatibility.
 
 
 # Which IP ranges are listed, and which not?
 
 1. Most Internet Service Providers have 2 types of [IP allocations](http://www-public.int-evry.fr/~maigron/RIR_Stats/RIPE_Allocations/Allocs/PL.html):
 
-- for DHCP/NAT/etc. - from which outgoing traffic is directed to other networks
-- for hosting services (web pages, mail servers etc.)
+   - for DHCP/NAT/etc. - from which outgoing traffic is directed to other networks (for you, it's incoming traffic)
+   - for hosting services (web pages, mail servers etc.) and other internal uses
 
-Variables in `allocs` file are related only to the first type.
+   Variables in `allocs` file are related only to the first type.
 
-2. There are global ISPs (eg. T-Mobile, Orange). Variables like `ORANGE` are related only to their polish branches and polish services.
+2. There are some global ISP brands in Poland (eg. T-Mobile, Orange). Variables like `ORANGE` are related only to their polish branches and polish networks.
 
 
 # Variables related to your incoming traffic
@@ -46,29 +46,29 @@ Variables in `allocs` file are related only to the first type.
 ### Poland - GSM operators
 
 In poland, there are 4 major GSM operators with their own networks - all of them are listed below. All the rest are [MVNOs](https://en.wikipedia.org/wiki/Mobile_virtual_network_operator),
-using IP addresses provided by their operator (except for Virgin Mobile Polska, which is not listed here).
+utilizing IP addresses provided by their operator (except for Virgin Mobile Polska, which is not listed here).
 
 - `PLAY` - Play Mobile, [P4 Sp. z. o.o.](https://www.play.pl/)
 - `PLUS` - Plus GSM [Polkomtel Sp. z o.o.](https://www.plus.pl/)
 - `TMOBILE` - [T-Mobile Polska S.A.](https://www.t-mobile.pl/) (previously Era GSM)
-- `ORANGE` - [Orange Polska S.A.](https://www.orange.pl/) (only GSM part, see `TPNET` variable below)
+- `ORANGE` - [Orange Polska S.A.](https://www.orange.pl/) (only GSM part of their network, see `TPNET` variable below)
 
 ### Poland - other ISPs
 
-- `TPNET` - the biggest polish ADSL/FTTH network, previously the first polish ISP, now part of Orange, but still branded as Neostrada (this variable is only related to ASDL/FTTH part of their network)
+- `TPNET` - the biggest polish ADSL/FTTH network, previously polish national ISP (Telekomunikacja Polska), now part of Orange, but still branded as Neostrada (this variable is only related to ASDL/FTTH part of their network)
 - `NETIA` - [Netia S.A.](https://www.netia.pl/), second biggest global ISP in Poland, their address ranges mix many types of networks (ADSL, broadband, other) - note that many Netia customers have non-Netia IP addresses:
    - Netia Mobile - uses IP ranges from `PLUS`, previously `PLAY`
    - corporate customers (Netia has many) often use their own IP allocations
 
 ### Finland
 
-- `SONERAFI` - [Telia](https://www.telia.fi/)
+- `SONERAFI` - [Telia](https://www.telia.fi/), major ISP in Helsinki and Turku
 - `ELISAFI` - [Elisa](https://elisa.fi/), GSM operator deployed in finnish trains
 
 ### global cloud services
 
-- `AMAZONAWS` - [Amazon Web Services](https://aws.amazon.com/) (again, only IP ranges, from which you can expect incoming traffic - or see [the full list](https://ip-ranges.amazonaws.com/ip-ranges.json))
-- `GCLOUD` - [Google Cloud Platform](https://cloud.google.com/) (only major IP ranges, see [this](https://gist.github.com/n0531m/f3714f6ad6ef738a3b0a) for the full list)
+- `AMAZONAWS` - [Amazon Web Services](https://aws.amazon.com/) (only IP ranges, from which you can expect incoming traffic, and sometimes merges into bigger subnets - [the full list](https://ip-ranges.amazonaws.com/ip-ranges.json) includes over 6500 different subnets!)
+- `GCLOUD` - [Google Cloud Platform](https://cloud.google.com/) (only major IP ranges, see [this script](https://gist.github.com/n0531m/f3714f6ad6ef738a3b0a) for the full list)
 
 ### CI/CD tools
 
@@ -106,12 +106,13 @@ using IP addresses provided by their operator (except for Virgin Mobile Polska, 
 ### others
 
 - `SMSAPI` - [smsapi.pl](https://www.smsapi.pl/) polish commercial SMS gateway
-- `RARLAB` - [RAR/WinRAR](https://www.rarlab.com/download.htm) archiver download site
+- `RARLAB` - [RAR/WinRAR](https://www.rarlab.com/) archiver download site
 
 
 # How to contribute
 
-We are open to add new variables, related to important ISPs or services, and to update existing ones. Just [create a new issue](https://github.com/serverfarmer/sf-ip-allocs/issues) for us.
+We are open to add new variables, related to important ISPs or services, and to update existing ones (we have notifications about changes where possible, but still we can miss something).
+Just [create a new issue](https://github.com/serverfarmer/sf-ip-allocs/issues) for us.
 
 
 # License
