@@ -41,6 +41,7 @@ Right now, our plan regarding this repository is to maintain it as long as possi
 - `INEA` refers to the biggest ISP and CATV provider in western Poland, [INEA S.A.](https://www.inea.pl/)
 - `ECHOSTAR`, `MAVERICK`, `EASTWEST`, `SYSTEMIAPL` - local ISP/CATV companies located in Poznań (western Poland)
 - `MULTIMEDIA` - global polish CATV [Multimedia Polska](https://www.multimedia.pl/), now part of bigger CATV [Vectra](https://www.vectra.pl/)
+- `VECTRA` - Vectra itself
 - `UPC` - another global polish CATV [UPC Polska](https://www.upc.pl/)
 
 ### Poland - GSM operators
