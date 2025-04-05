@@ -121,7 +121,7 @@ Just [create a new issue](https://github.com/serverfarmer/sf-ip-allocs/issues) f
 |                      |                                          |
 |:---------------------|:-----------------------------------------|
 | **Author:**          | Tomasz Klim (<opensource@tomaszklim.pl>) |
-| **Copyright:**       | Copyright 2009-2022 Tomasz Klim          |
+| **Copyright:**       | Copyright 2009-2025 Tomasz Klim          |
 | **License:**         | MIT                                      |
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
